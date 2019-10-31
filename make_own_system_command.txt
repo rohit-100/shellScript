@@ -1,0 +1,16 @@
+first make the shell script
+the the file any of the dir which location is stored int $PATH variable
+you can do it with
+export PATH=${PATH}:path_to_be_added
+but this one is temprory only
+
+
+to make it permanant you have to define the same thing in ~/.bash_profile
+
+PATH=$PATH:paths_to_be_added
+export $PATH
+
+
+or export PATH=~/bin:$PATH
+
+

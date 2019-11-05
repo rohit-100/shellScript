@@ -1,0 +1,9 @@
+
+x=$(ls)
+
+suppose i want to make date files
+
+todays_date=$(date +"%Y-%m-%d")
+
+log_file_name=${todays_date}.log
+mkdir $log_file_name

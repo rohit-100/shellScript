@@ -1,0 +1,12 @@
+echo   --> output command
+read   --> input command
+command line argument as a input
+
+
+read -p "enter a string: " name
+ehco "your name is $name"
+
+-p is only to print the message
+
+
+

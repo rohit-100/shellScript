@@ -1,0 +1,73 @@
+echo "welcome to shell scripting"
+
+myno=456
+echo "$myno"
+
+echo "$(ls)"
+echo "$(pwd)"
+
+
+echo "welcome to shell script from $my_name on $(date)"
+
+
+
+echo [options] string/$variable/$(command)
+
+two types of options  
+-e
+-n
+
+-n to supperess the new line for the current command
+
+-e used to execute special/escaped character
+
+escape character \n  --this option creates new line where it is used
+
+echo -e "first line \nsecond line"
+
+\b single backspace
+
+\r  your cursur will go to first position and overwrite the things what is written after \r
+e.g echo "this is my name \rxxxxx"
+
+\t this option is used to create horizontal tab space
+
+echo -e "first \t seocnd"
+
+\v  vertical tab
+
+\a create a sound alert
+\\  escapes or eliminates the special purpose of your excape character
+
+ 
+
+
+
+ we can club -e and -n options
+
+echo -en "this is \n first"
+
+
+
+
+echo with color  
+
+use -e option to execute colors for output
+
+echo -e "\033[92mThis is a color\033[[0m"
+here 92 is the value of color code
+you can insert different color code here like 100,102,104
+
+the last chars like \033[0m is to end the color execution beyond our given text
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+
+for each in $(seq 1 10)
+do
+    echo "welcome to shell script"
+done
+
+
+
+while [  ]
+do
+
+
+done
+
+
+while :     # this always true
+do
+
+done
+
+
+for i in $(linux-or-unix-command)
+do
+
+
+done
+
+
+for i in {1..5}    #{start..end..increment}
+do
+    ehco $i
+
+done
+
+{start..end..increment} {1..10..2}
+
+
+
+
+
+for (( exp1; exp2; exp3 ))
+do
+    commands
+
+done
+
+
+for (( x=1; x<=5; x++ ))
+do
+    echo $x
+done
+
+
+
+for (( ; ; ))    #infine loop
+
+
+for file in /etc/*
+do
+    if [ "${file}" == "/etc/resolv.conf" ]
+    then
+          do_some_activity
+    fi
+
+done
+
+
+
+
+

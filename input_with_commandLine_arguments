@@ -1,0 +1,58 @@
+
+a=$1
+b=$2
+
+result=`expr "$a + $b" | bc `
+
+$#  no of commmand line arguments
+
+
+
+
+a programme
+
+cmd_line_args=$#
+
+if [ $cmd_line_args -eq 2 ]
+then
+    x=$1
+    y=$2
+    result=$((x+y))
+    ehco "the addition is $result"
+fi
+
+
+to comment multiple lines 
+
+if false 
+then
+
+
+lines
+
+
+
+if
+
+
+
+
+a another programme
+
+
+read -p "enter start or stop to perform action " action
+
+if [ "${action}" == "start" ]
+then
+    echo "starting http.."
+fi
+
+if [ "${action}" == "stop" ]
+then 
+    echo "stopping http..."
+fi
+
+
+
+
+

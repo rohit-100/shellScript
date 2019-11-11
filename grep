@@ -1,0 +1,68 @@
+
+grep pattern filename
+
+grep "pattern" filename
+
+grep command prints the line which is matched
+
+
+
+grep "match_text" file1 file2 file3 ...
+
+
+to highlight the text we can use --color=auto
+
+grep word filename --color=auto
+
+
+to use all the features of grep we use    grep -E  or egrep
+
+echo this is a line. | egrep -o "[a-z]+\."
+
+-o option is to print only the matches
+
+
+-v          to print not matched lines
+-c          to count the no of lines matched not no of mathces
+-o | wc -l  this can be used to count no of matches  ,-o is for output the matches and count the no of lines
+
+-n          prints the line number of the mathced line
+-b          to print the char or byte offset of the match ,-b is always used with -o
+
+-l          to search over multiple files and want the list of files which matches the pattern we use -l
+-L          reverse the output of -l
+-r or -R    recursilvly search the pattern in the files of the dir
+        
+
+        e.g.   grep "test_function()" . -r -n
+
+
+-i          ignore the case of pattern
+
+
+grep -e "pattern1" -e "pattern2"     this will match lines with either pattern1 or pattern2
+
+
+-f          we can provide the pattern source file and will match every pattern line by line 
+            
+            e.g. grep -f pattern_file_name file_to_be_searched
+
+--include           to include only specific files for search
+--exclude           to exclude specific files for search
+
+        e.g.   grep "main()" . -r -n --include *.{c,cpp}
+
+                note   some{thing1,thing2,thing3} expands to something1 ,something2,something3
+
+
+-q          for silent output $? can be used to read the status code 
+            $? is 0 if any match found or nonzero if no match found 
+
+
+
+-A n        to print n after lines for  every match
+-B n        to print n before lines for every mathc 
+-C n        to print n after and before lines for every match
+
+
+

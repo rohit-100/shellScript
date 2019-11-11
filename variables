@@ -1,0 +1,18 @@
+default value is blank for any shell variable
+
+if we define any varibale then we will get a value
+
+some are system defined variables or enviroment variables like $USER $SHELL $PATH
+
+
+how can we see all sys varibale 
+use command    env or printenv or set 
+always sys defined variables are in capital letter
+
+$? gives the status of priviously executed command
+if val is zero then the priviously executed command succesfuuly 
+else execution failed;
+
+
+
+

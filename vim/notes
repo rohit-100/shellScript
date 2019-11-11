@@ -1,0 +1,16 @@
+C   - delete from cursor to the end of line and begin insert
+
+basics         wWbBeE
+w   forward to the begining of next word
+
+b   backward to the next begining of a word
+
+e   forward to the next end of word
+
+0   move to the first character of a line
+$   move to the last character of line
+^   move to first non-sapce character
+
+
+[n]f<o>      forward unit nth o
+

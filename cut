@@ -1,0 +1,48 @@
+cut -f FIELD_LIST filnames
+
+-f 1            for only first column
+-f 1,2,3        for 1st 2nd and 3rd col
+--complement    for complement the result
+-d ";"          if ';' is used as delimeter
+-d " "          if space is used a delemeter
+
+
+
+N-              from nth byte,character,field to end of file
+N-M             form nth to mth(included) byte,character,field
+-M              form first to mth(included) byte character ,field
+
+
+-c              for character
+-b              for byte
+-f              for fields
+
+
+let text be 
+abcdefghij
+abcdedghij
+abcdegghij
+
+e.g.   cut -c 1-5 file.txt
+        abcde
+        abcde
+        abcde
+
+        
+        cut -c -2 file.txt
+        ab
+        ab
+        ab
+
+
+
+--output-delimeter "delimiter string"
+
+        cut file.txt -c 1-3,6-9 --output-delimiter ","
+        abc,fghi
+        abc,fghi
+        abc,fghi
+
+
+
+       
